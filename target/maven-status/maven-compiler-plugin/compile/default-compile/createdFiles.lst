@@ -1,4 +1,6 @@
-com/example/projektaufgabe/DatenRepository.class
-com/example/projektaufgabe/DemoApplication.class
-com/example/projektaufgabe/Daten.class
-com/example/projektaufgabe/DatenController.class
+com/example/projektaufgabe/repository/WeatherDataRepository.class
+com/example/projektaufgabe/model/WeatherData.class
+com/example/projektaufgabe/ProjektaufgabeApplication.class
+com/example/projektaufgabe/controller/WeatherController.class
+com/example/projektaufgabe/schedule/WeatherDataCollectorTask.class
+com/example/projektaufgabe/service/WeatherDataService.class
