@@ -14,17 +14,14 @@ public class WeatherDataCollectorTask {
     @Autowired
     private WeatherDataService weatherDataService;
 
-    // Scheduled task to run every 5 minutes
-    @Scheduled(fixedRate = 300000) // 5 minutes = 300,000 milliseconds
+    @Scheduled(fixedRate = 60000) // Alle 60 Sekunden (eine Minute)
     public void collectWeatherData() {
-        // Implement logic to fetch weather data from OpenWeatherMap API and save it
         WeatherData weatherData = new WeatherData();
-        weatherData.setCity("Wangen im Allgäu");
-        // Set temperature, humidity, wind speed, timestamp accordingly
-
-        // Save weather data
+        weatherData.setCity("Sample City");
+        weatherData.setTemperature(25.0);
+        weatherData.setHumidity(60.0);
+        weatherData.setWindSpeed(10.0);
+        weatherData.setTimestamp(LocalDateTime.now());
         weatherDataService.saveWeatherData(weatherData);
-
-        System.out.println("Weather data collected and saved: " + LocalDateTime.now());
     }
 }

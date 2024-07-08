@@ -1,5 +1,6 @@
 /home/tux/projektaufgabe/src/main/java/com/example/projektaufgabe/service/WeatherDataService.java
 /home/tux/projektaufgabe/src/main/java/com/example/projektaufgabe/model/WeatherData.java
+/home/tux/projektaufgabe/src/main/java/com/example/projektaufgabe/service/impl/WeatherDataServiceImpl.java
 /home/tux/projektaufgabe/src/main/java/com/example/projektaufgabe/ProjektaufgabeApplication.java
 /home/tux/projektaufgabe/src/main/java/com/example/projektaufgabe/controller/WeatherController.java
 /home/tux/projektaufgabe/src/main/java/com/example/projektaufgabe/schedule/WeatherDataCollectorTask.java

@@ -4,7 +4,6 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "weather_data")
 public class WeatherData {
 
     @Id
@@ -24,22 +23,22 @@ public class WeatherData {
     private Double windSpeed;
 
     @Column(name = "timestamp", nullable = false)
-    private LocalDateTime timestamp = LocalDateTime.now(); // Aktuelles Datum und Zeit
+    private LocalDateTime timestamp = LocalDateTime.now();
 
-    // Standardkonstruktor
+    // Default constructor
     public WeatherData() {
     }
 
-    // Konstruktor ohne ID (wenn die ID automatisch generiert wird)
+    // Constructor with fields
     public WeatherData(String city, Double temperature, Double humidity, Double windSpeed) {
         this.city = city;
         this.temperature = temperature;
         this.humidity = humidity;
         this.windSpeed = windSpeed;
-        this.timestamp = LocalDateTime.now(); // Aktuelles Datum und Zeit
+        this.timestamp = LocalDateTime.now();
     }
 
-    // Getter und Setter für alle Felder
+    // Getters and Setters
     public Long getId() {
         return id;
     }
@@ -88,6 +87,7 @@ public class WeatherData {
         this.timestamp = timestamp;
     }
 
+    // toString method
     @Override
     public String toString() {
         return "WeatherData{" +

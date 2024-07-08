@@ -1,17 +1,10 @@
 package com.example.projektaufgabe.service;
 
 import com.example.projektaufgabe.model.WeatherData;
-import com.example.projektaufgabe.repository.WeatherDataRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-@Service
-public class WeatherDataService {
+import java.util.List;
 
-    @Autowired
-    private WeatherDataRepository weatherDataRepository;
-
-    public WeatherData saveWeatherData(WeatherData weatherData) {
-        return weatherDataRepository.save(weatherData);
-    }
+public interface WeatherDataService {
+    WeatherData saveWeatherData(WeatherData weatherData);
+    List<WeatherData> getAllWeatherData();
 }
